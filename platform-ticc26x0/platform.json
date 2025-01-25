@@ -1,0 +1,57 @@
+{
+  "name": "ticc26x0",
+  "title": "TI CC26x0",
+  "description": "Texas Instruments CC26x0 wireless MCUs with ARM Cortex-M3 core",
+  "homepage": "https://www.ti.com/product/CC2650",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dev-platform",
+    "ARM",
+    "Cortex-M",
+    "TI",
+    "SimpleLink",
+    "CC2630",
+    "CC2640",
+    "CC2650",
+    "CC26x0",
+    "CC26xx",
+    "Texas Instruments",
+    "RF",
+    "Radio"
+  ],
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanosonde/platform-ticc26x0.git"
+  },
+  "version": "0.1.0",
+  "frameworks": {
+    "arduino": {
+    }
+  },
+  "packages": {
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "version": ">=1.60301.0,<1.60400.0"
+    },
+    "tool-openocd": {
+      "type": "uploader",
+      "optional": true,
+      "version": "~2.1000.0"
+    },
+    "tool-jlink": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.63208.0"
+    },
+    "tool-dslite": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.80200.1400"
+    }
+  }
+}

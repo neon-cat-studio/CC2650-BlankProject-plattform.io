@@ -1,0 +1,35 @@
+{
+  "build": {
+    "core": "cc26xx",
+    "cpu": "cortex-m3",
+    "extra_flags": "-DENERGIA_ARCH_CC26XX -DENERGIA_CC2650_LAUNCHXL -DBOARD_CC2650_LAUNCHXL",
+    "f_cpu": "48000000L",
+    "mcu": "cc2650f128",
+    "variant": "LAUNCHXL-CC2650"
+  },
+  "debug": {
+    "svd_path": "cc2650f128.svd",
+    "jlink_device": "CC2650F128",
+    "openocd_chipname": "cc2650f128",
+    "openocd_target": "ti_cc26x0",
+    "onboard_tools": [
+      "xds110"
+    ]
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "TI LaunchPadXL (SimpleLink) w/ CC2650 (48MHz)",
+  "upload": {
+    "maximum_ram_size": 20480,
+    "maximum_size": 131072,
+    "protocol": "dslite",
+    "protocols": [
+      "jlink",
+      "xds110",
+      "dslite"
+    ]
+  },
+  "url": "https://www.ti.com/tool/LAUNCHXL-CC2650",
+  "vendor": "TI"
+}
